@@ -25,3 +25,10 @@
     - Heavy vs. Lightweight (Needs more filling in) frameworks
     - Express is lightweight
     - Forces you to understand what is going on. 
+
+# NPM Init and Package.json
+* Use the '--save' flag to install packages
+* package.json
+    - File that contains all the meta data relative to a certain project (name, authors, contributers, and dependencies). 
+    - Rather than uploading all the code, package.json tells you what to download instead. 
+* 'npm init' to create a new package.json
