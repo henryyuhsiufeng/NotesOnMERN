@@ -32,3 +32,13 @@
     - File that contains all the meta data relative to a certain project (name, authors, contributers, and dependencies). 
     - Rather than uploading all the code, package.json tells you what to download instead. 
 * 'npm init' to create a new package.json
+
+# Relationship between Express and Node
+* (Recap)
+    - Node: Javascript runtime used to exevute code outside of the browser. 
+    - Express: Library that runs in the Node runtime. Has helpters to make dealing with HTTP traffic easier. You can code everything in Express using just Node. Express is just a "helper."
+* Node would be configured to listen to traffic on a specific port. 
+* Express looks at the request and decides what chunk of code will "handle" or respond to the request
+* In express, there are route handlers that would deal with things such as authenticity of a user or another that would log out a user. Express would figure out which appropriate route handler to send that certain response to. 
+* The route handlers would process the incomeing request and generate a response that would be sent back to the node process. 
+* Node after getting the response from the route handler would "res" or respond to the incoming HTTP request. 
