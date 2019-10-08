@@ -42,3 +42,10 @@
 * In express, there are route handlers that would deal with things such as authenticity of a user or another that would log out a user. Express would figure out which appropriate route handler to send that certain response to. 
 * The route handlers would process the incomeing request and generate a response that would be sent back to the node process. 
 * Node after getting the response from the route handler would "res" or respond to the incoming HTTP request. 
+
+# Requests
+- get:     Get info
+- post:    Send info
+- app put: Update all the properties of something
+- delete:  Delete something
+- patch:   Update one or two properties of something
