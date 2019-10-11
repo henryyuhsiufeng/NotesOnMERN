@@ -11,7 +11,8 @@ app.get('/', (req, res)=> {
 });
 
 // Listen for incoming traffic on port 5000
-app.listen(5000);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
 
 // Breakdown
 /*
