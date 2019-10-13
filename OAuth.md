@@ -1,1 +1,0 @@
-![OAuth diagram](/images/OAuth.png)
