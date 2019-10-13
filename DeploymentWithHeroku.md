@@ -39,6 +39,8 @@ All topics listed are shown in working example in the deployedEx directory.
 
 ## Subsequent Deploys
 1. Commit codebase with git
+    - git add and commit the code and push to heroku remote. 
+    - git push heroku master
 2. Deploy App with Git 
 
 ## Environment Variables

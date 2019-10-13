@@ -7,7 +7,7 @@ const app = express();
 // '/' route handler
 app.get('/', (req, res)=> {
     // passing into res.send() and object
-    res.send({hi: 'there' });
+    res.send({hi: 'there buddy' });
 });
 
 // Listen for incoming traffic on port 5000
