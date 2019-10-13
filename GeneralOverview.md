@@ -51,6 +51,14 @@
 - patch:   Update one or two properties of something
 
 # Breakdown of node.js routing
+```
+ // '/' route handler
+    app.get('/', (req, res)=> {
+     // passing into res.send() and object
+     res.send({hi: 'there buddy' });
+    });
+```
+
 [app][get]['/'][req][res][res.send({hi: 'there'})]
 [ 1 ][ 2 ][ 3 ][ 4 ][ 5 ][          6            ]
 

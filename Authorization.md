@@ -24,7 +24,12 @@
 
 - A helper library that automates most of the OAuth flow
 
+# Installation of Passport JS
+
+- npm install --save passport passport-google-oauth20
+
 ## Common User Issues: 
 1. Does not automate the entire OAuth flow.
     - Makes it hard to understand what is going on. 
 2. Confusion with the structure of the library
+
