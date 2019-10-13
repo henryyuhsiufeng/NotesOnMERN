@@ -24,12 +24,30 @@
 
 - A helper library that automates most of the OAuth flow
 
-# Installation of Passport JS
-
+## Installation of Passport JS
 - npm install --save passport passport-google-oauth20
 
-## Common User Issues: 
+## Enabling Google OAuth API
+- console.developers.google.com
+1. Create new project
+2. Name project: (something relevant)-dev or without dev
+3. Enable the google OAuth API
+4. Create a new API credential
+    - OAuth client ID
+    - Configure consent screen (When user grants our application access to their account information)
+    - Fill out product name
+    - Select application type
+
+# Common User Issues/Debugging: 
 1. Does not automate the entire OAuth flow.
     - Makes it hard to understand what is going on. 
 2. Confusion with the structure of the library
+
+## Fixing redirect URI wildcard issue
+Google has made a number of changes to the OAuth credential's restrictions, and no longer allows wildcards in the redirect URI field.
+
+### Solution:
+Since the main goal of using http://localhost:5000/* was to show the redirect error a few lectures later,  we can do one of two things here:
+1. Leave the authorized URI Redirect blank, since we will be fixing this later.
+2. Enter http://localhost:5000/auth/google/callback now, since that is what it will be changed to in a later lecture.
 
