@@ -1,5 +1,6 @@
 # OAuth Flow With Google
 
+## Visual Overview
 ![OAuth diagram](/images/OAuth.png)
 
 ## Client
@@ -17,7 +18,7 @@
 - Passport: General helpers for handling auth in Express apps.
 - Passport Strategy: Helpers for authenticating with one very specific method (email/password, Google, Facebook, etc)
     - A strategy is a module that helps with authenticating with one certain provider
-    
+
 ## Visual Understanding
 ![OAuth diagram](/images/passportjs.png)
 
