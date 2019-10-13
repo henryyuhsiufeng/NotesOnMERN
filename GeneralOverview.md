@@ -49,3 +49,15 @@
 - app put: Update all the properties of something
 - delete:  Delete something
 - patch:   Update one or two properties of something
+
+# Breakdown of node.js routing
+[app][get]['/'][req][res][res.send({hi: 'there'})]
+[ 1 ][ 2 ][ 3 ][ 4 ][ 5 ][          6            ]
+
+1. Express App to register this route handler with. It is the underlying express server.
+2. Watch for incoming requests with this method
+3. Watch for requests trying to access '/'
+4. Object representing the incoming request
+5. Object representing the outgoing response
+6. Immediately send some JSON back to who ever made this request
+
