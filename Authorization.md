@@ -31,12 +31,20 @@
 - console.developers.google.com
 1. Create new project
 2. Name project: (something relevant)-dev or without dev
-3. Enable the google OAuth API
+3. Enable the google OAuth API (buried in google+)
 4. Create a new API credential
     - OAuth client ID
     - Configure consent screen (When user grants our application access to their account information)
     - Fill out product name
     - Select application type
+
+## Securing API Keys
+clientID: Public token - we share this with the public. It identifies our application to Google services
+
+clientSecret: Private token - we don't want anyone to see this! 
+
+- Implementation: 
+
 
 # Common User Issues/Debugging: 
 1. Does not automate the entire OAuth flow.
