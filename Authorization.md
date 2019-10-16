@@ -45,6 +45,8 @@ clientSecret: Private token - we don't want anyone to see this!
 
 - Implementation: 
 
+## Testing OAuth
+Make a route handler that kicks in the OAuth flow. Google checkts the redirect ahead of time to prevent malicious websites from taking advantage.
 
 # Common User Issues/Debugging: 
 1. Does not automate the entire OAuth flow.
@@ -53,6 +55,10 @@ clientSecret: Private token - we don't want anyone to see this!
 
 ## Fixing redirect URI wildcard issue
 Google has made a number of changes to the OAuth credential's restrictions, and no longer allows wildcards in the redirect URI field.
+
+## Errors with routing
+- Cannot GET /auth/google/callback
+    - Means your server is not set up properly to handle the route '/auth/google/callback'
 
 ### Solution:
 Since the main goal of using http://localhost:5000/* was to show the redirect error a few lectures later,  we can do one of two things here:
