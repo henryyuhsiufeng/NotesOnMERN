@@ -14,6 +14,11 @@
 
 # Overview of Passport JS
 
+## Access Token
+- Allows our server to take identifying user information and store it within our database. 
+
+# Implementation of Passport JS
+
 ## Passport library Components
 - Passport: General helpers for handling auth in Express apps.
 - Passport Strategy: Helpers for authenticating with one very specific method (email/password, Google, Facebook, etc)
